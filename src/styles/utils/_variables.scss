@@ -1,0 +1,43 @@
+:root {
+  // fonts
+  --font-family-primary: "Montserrat", sans-serif;
+  --font-family-title: "Bebas Neue", sans-serif;
+
+  // text
+  --text-main: #ffffff;
+  --text-accent: #5700e0;
+  --text-secondary: #a3a3a3;
+  --text-accent-shadow: #4700e0;
+
+  --text-footer: #626262;
+  --text-price: #4aab4f;
+  --text-placeholder: #949494;
+  --text-error: red;
+
+  // background
+  --bg-main: #000000;
+  --bg-secondary: #262626;
+  --bg-accent: #5700e0;
+  --bg-icons: #5c5959;
+  --bg-avatar: #d9d9d9;
+  --bg-avatar-icon: #121212;
+  --bg-comments: #ababab;
+  --bg-footer: #0a0a0a;
+  --bg-footer-mobile: #0d0d0d;
+  --bg-banner: #141414;
+
+  // transition
+  --anim: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  // borders
+  // --border-full-black: 1px solid #000000;
+  // --border-top: 1px solid #cccccc;
+
+  // shadows
+  // --shadow-down: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  // --shadow-up: 0px 1px 10px 0px rgba(0, 0, 0, 0.15);
+  // --shadow-hover: 0px 0px 30px 0px rgba(0, 0, 0, 0.35);
+  // --stroke: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000,
+  //   1px 1px 0 #000000;
+  // --shadow-text: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
