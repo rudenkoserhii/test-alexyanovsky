@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "styles/main.scss";
+import "animate.css";
 import App from "components/App/App";
 
 const root = ReactDOM.createRoot(

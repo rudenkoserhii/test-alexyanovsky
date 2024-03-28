@@ -1,8 +1,12 @@
+import { Footer } from "components/Footer/Footer";
+import { Main } from "components/Main/Main";
+
 function App(): JSX.Element {
   return (
-    <div className="App">
-      <header className="App-header">Header</header>
-    </div>
+    <>
+      <Main />
+      <Footer />
+    </>
   );
 }
 

@@ -21,29 +21,29 @@
   //   }
   // }
 
-  @if $type == 'not-mobile' {
+  @if $type == "not-mobile" {
     @media screen and (min-width: $tablet) {
       @content;
     }
   }
 
-//   @if $type == 'not-desktop' {
-//     @media screen and (max-width: #{$desktop - 0.02}) {
-//       @content;
-//     }
-//   }
+  //   @if $type == 'not-desktop' {
+  //     @media screen and (max-width: #{$desktop - 0.02}) {
+  //       @content;
+  //     }
+  //   }
 
-//   @if $type == 'desktop' {
-//     @media screen and (min-width: $desktop) {
-//       @content;
-//     }
-//   }
-// }
+  //   @if $type == 'desktop' {
+  //     @media screen and (min-width: $desktop) {
+  //       @content;
+  //     }
+  //   }
+  // }
 
-// @mixin bg($type) {
-//   @if $type == 'retina' {
-//     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-//       @content;
-//     }
-//   }
-// }
+  // @mixin bg($type) {
+  //   @if $type == 'retina' {
+  //     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  //       @content;
+  //     }
+  //   }
+}

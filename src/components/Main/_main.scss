@@ -1,0 +1,7 @@
+.main {
+  height: calc(100vh - 318px);
+
+  @include mq("not-mobile") {
+    height: calc(100vh - 214px);
+  }
+}

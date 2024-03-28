@@ -1,0 +1,130 @@
+.points__wrapper {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @include mq(not-mobile) {
+    gap: 40px;
+
+    width: 782px;
+    padding: 0;
+  }
+}
+
+.points__title {
+  font-size: 20px;
+  white-space: nowrap;
+  font-weight: 600;
+
+  @include mq("not-mobile") {
+    font-size: 24px;
+  }
+}
+
+.points__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  //   gap: 20px;
+
+  width: 100%;
+
+  margin-bottom: 40px;
+
+  @include mq(not-mobile) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0;
+
+    margin-bottom: 100px;
+  }
+}
+
+.points__item {
+  display: block;
+  position: relative;
+
+  width: 100%;
+  height: 80px;
+  &:not(last-child) {
+    margin-bottom: 20px;
+  }
+
+  @include mq(not-mobile) {
+    width: calc((100% - 15px) / 2);
+    height: 100px;
+
+    &:nth-child(odd) {
+      margin-right: 15px;
+    }
+    &:nth-child(1),
+    &:nth-child(2) {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.points__text {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  box-sizing: border-box;
+  position: relative;
+
+  width: calc(100% - 25px);
+  height: 100%;
+  padding: 10px 25px 10px 10px;
+
+  font-size: 12px;
+  font-weight: 500;
+  vertical-align: text-top;
+
+  background-color: var(--bg-secondary);
+
+  @include mq(not-mobile) {
+    width: calc(100% - 35px);
+    height: 100%;
+    padding: 15px 35px 15px 15px;
+
+    font-size: 15px;
+  }
+}
+
+.points__icon {
+  position: absolute;
+  top: 50%;
+  right: 0;
+
+  transform: translateY(-50%);
+
+  width: 50px;
+  height: 50px;
+  & > .star__outside {
+    fill: var(--text-main);
+  }
+
+  & > .star__inside {
+    fill: var(--text-accent);
+  }
+
+  @include mq(not-mobile) {
+    width: 70px;
+    height: 70px;
+
+    & > .star__outside {
+      fill: var(--text-accent);
+    }
+
+    & > .star__inside {
+      fill: var(--text-main);
+    }
+  }
+}
