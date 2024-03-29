@@ -4,7 +4,8 @@
   align-items: center;
   gap: 40px;
 
-  min-height: calc(100vh - 318px);
+  min-height: calc(100vh - 37px);
+  margin-bottom: 50px;
 
   @include mq("not-mobile") {
     flex-direction: row;
@@ -12,7 +13,8 @@
     justify-content: center;
     gap: 50px;
 
-    min-height: calc(100vh - 214px);
+    min-height: calc(100vh - 314px);
+    margin-bottom: 100px;
   }
 }
 

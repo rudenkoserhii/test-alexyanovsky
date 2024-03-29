@@ -1,7 +1,5 @@
-// import "components/Footer/footer.scss";
 import { phones, emails, socials } from "enums";
 import { ReactComponent as MailIcon } from "assets/icons/mail.svg";
-import { ReactComponent as TelegramIcon } from "assets/icons/telegram.svg";
 
 export const Footer = (): JSX.Element => (
   <footer className="footer">
@@ -34,15 +32,20 @@ export const Footer = (): JSX.Element => (
           </div>
         </li>
         <li className="footer__extra-contact">
-          <a
-            href={socials.find(({ name }) => name === "telegram")?.link}
-            className="footer__extra-contact--telegram link"
-          >
-            <TelegramIcon className="footer__telgram-icon" />
-            <div className="footer__extra-contact-link footer__extra-contact-link--telegram">
-              {socials.find(({ name }) => name === "telegram")?.name}
-            </div>
-          </a>
+          {socials
+            .filter(({ name }) => name === "telegram")
+            .map(({ name, link, Icon }) => (
+              <a
+                key={link}
+                href={link}
+                className="footer__extra-contact--telegram link"
+              >
+                <Icon className="footer__telgram-icon" />
+                <div className="footer__extra-contact-link footer__extra-contact-link--telegram">
+                  {name}
+                </div>
+              </a>
+            ))}
         </li>
       </ul>
     </div>

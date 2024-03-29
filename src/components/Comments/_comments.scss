@@ -1,0 +1,8 @@
+.comments__wrapper {
+  width: 100%;
+
+  background-color: var(--bg-comments-box);
+  @include mq("not-mobile") {
+    width: 520px;
+  }
+}
