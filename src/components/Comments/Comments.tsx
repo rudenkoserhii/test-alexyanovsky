@@ -31,16 +31,12 @@ export const Comments = (): JSX.Element => {
 
   const handleChangeComment = (event: React.ChangeEvent): void => {
     const textarea = event.target as HTMLTextAreaElement;
-    if (textarea.value !== "") {
-      setCommentValue(textarea.value);
-    }
+    setCommentValue(textarea.value);
   };
 
   const handleChangeName = (event: React.ChangeEvent): void => {
     const input = event.target as HTMLInputElement;
-    if (input.value !== "") {
-      setNameValue(input.value);
-    }
+    setNameValue(input.value);
   };
 
   const handleFormSubmit = (event: React.FormEvent): void => {
@@ -94,16 +90,16 @@ export const Comments = (): JSX.Element => {
     localStorage.setItem("comments", JSON.stringify(comments));
   }, [comments]);
 
-
   return (
     <section className="comments__wrapper">
       <form className="comments__form" onSubmit={handleFormSubmit}>
         <label
           className="comments__textarea-label"
-          htmlFor="comments__testarea-input"
+          htmlFor="comments__textarea-input"
         >
           <textarea
-            id="comments__testarea-input"
+            className="comments__textarea-input"
+            id="comments__textarea-input"
             name="comment"
             value={commentValue}
             placeholder="Добавить комментарий..."
@@ -114,28 +110,30 @@ export const Comments = (): JSX.Element => {
           />
         </label>
         <p className="comments__social-label">Войти через:</p>
-        {socials.map(({ name, link, Icon }) => (
-          <a
-            key={link}
-            href={link}
-            className="comments__social link"
-            title={name}
-          >
-            <Icon className="comments__icon" />
-          </a>
-        ))}
+        <ul className="comments__social-list list">
+          {socials.map(({ name, link, Icon }) => (
+            <li className="comments__social-item" key={link}>
+              <a href={link} className="comments__social link" title={name}>
+                <Icon className="comments__icon" />
+              </a>
+            </li>
+          ))}
+        </ul>
         <label className="comments__input-label" htmlFor="comments__input">
           <span className="comments__input-span">Или как гость</span>
-          <input
-            id="comments__input"
-            name="name"
-            value={nameValue}
-            placeholder="Имя *"
-            onChange={handleChangeName}
-          />
-          <a href="./" className="comments__share link" title="Share...">
-            <ShareIcon className="comments__share-icon" />
-          </a>
+          <div className="comments__input-box">
+            <input
+              className="comments__input"
+              id="comments__input"
+              name="name"
+              value={nameValue}
+              placeholder="Имя *"
+              onChange={handleChangeName}
+            />
+            <a href="./" className="comments__share link" title="Share...">
+              <ShareIcon className="comments__share-icon" />
+            </a>
+          </div>
         </label>
         <button type="submit" className="comments__button">
           Отправить
@@ -170,7 +168,7 @@ export const Comments = (): JSX.Element => {
               <div className="comments__button-box">
                 <button
                   type="button"
-                  className="comments__button comments__answer"
+                  className="comments__answer"
                   onClick={() => alert("Answer clicked!")}
                 >
                   <EnterIcon className="comments__answer-icon" />
@@ -178,7 +176,7 @@ export const Comments = (): JSX.Element => {
                 </button>
                 <button
                   type="button"
-                  className="comments__button comments__hand-up"
+                  className="comments__hand-up"
                   onClick={() => handleClickUp(id)}
                   disabled={isVouted}
                 >
@@ -187,7 +185,7 @@ export const Comments = (): JSX.Element => {
                 </button>
                 <button
                   type="button"
-                  className="comments__button comments__hand-down"
+                  className="comments__hand-down"
                   onClick={() => handleClickDown(id)}
                   disabled={isVouted}
                 >
@@ -196,7 +194,7 @@ export const Comments = (): JSX.Element => {
                 </button>
                 <button
                   type="button"
-                  className="comments__button comments__hand-down"
+                  className="comments__hand-down"
                   onClick={() => alert("Submenu clicked!")}
                 >
                   <DotsIcon className="comments__hand-down-icon" />

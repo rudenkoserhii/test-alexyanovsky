@@ -1,8 +1,158 @@
 .comments__wrapper {
-  width: 100%;
+  box-sizing: border-box;
 
-  background-color: var(--bg-comments-box);
+  width: 100%;
+  padding: 40px 10px;
+  background-color: var(--bg-secondary);
   @include mq("not-mobile") {
     width: 520px;
+    padding: 30px 20px;
   }
+}
+
+.comments__form {
+  width: 100%;
+  height: auto;
+}
+
+.comments__textarea-label {
+  display: block;
+
+  width: 100%;
+  height: fit-content;
+}
+
+.comments__textarea-input {
+  box-sizing: border-box;
+
+  display: block;
+
+  width: 100%;
+  height: 118px;
+  margin-bottom: 30px;
+  padding: 20px;
+  border: none;
+  outline: none;
+  resize: none;
+
+  background-color: var(--bg-comments-alpha);
+
+  font-family: var(--font-family-primary);
+  color: var(--text-main);
+
+  &::placeholder,
+  &::-moz-placeholder {
+    color: var(--text-placeholder);
+  }
+}
+
+.comments__social-label,
+.comments__input-span {
+  display: block;
+
+  font-size: 14px;
+
+  margin-bottom: 18px;
+
+  @include mq("not-mobile") {
+    font-size: 16px;
+
+    margin-bottom: 15px;
+  }
+}
+
+.comments__social-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+
+  margin-bottom: 30px;
+  @include mq("not-mobile") {
+    gap: 24px;
+  }
+}
+
+.comments__icon {
+  width: 30px;
+  height: 30px;
+
+  fill: var(--bg-icons);
+  @include mq("not-mobile") {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.comments__input-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+
+  @include mq("not-mobile") {
+    gap: 27px;
+
+    margin-bottom: 20px;
+  }
+}
+
+.comments__share {
+  display: block;
+
+  &-icon {
+    display: none;
+    @include mq("not-mobile") {
+      display: block;
+
+      width: 36px;
+      height: 36px;
+    }
+  }
+}
+
+.comments__input {
+  box-sizing: border-box;
+
+  display: block;
+
+  width: 100%;
+  height: 50px;
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+
+  background-color: var(--bg-comments-alpha);
+
+  font-family: var(--font-family-primary);
+  color: var(--text-main);
+
+  font-size: 14px;
+
+  &::placeholder,
+  &::-moz-placeholder {
+    color: var(--text-placeholder);
+  }
+
+  @include mq("not-mobile") {
+    font-size: 16px;
+
+    padding: 16px 20px;
+  }
+}
+
+.comments__button {
+  all: unset;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+  font-weight: 500;
+
+  height: 50px;
+  width: 100%;
+
+  background-color: var(--bg-accent);
 }
