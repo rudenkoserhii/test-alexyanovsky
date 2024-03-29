@@ -1,0 +1,264 @@
+.banner__section {
+  width: 100%;
+  height: fit-content;
+}
+
+.banner__wrapper {
+  position: relative;
+
+  background-color: var(--bg-secondary);
+
+  padding: 20px 10px 25px 10px;
+  height: 208px;
+
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 64px;
+    right: -170px;
+    width: 235px;
+    height: 296px;
+    background: rgba(87, 0, 224, 0.1);
+    border-radius: 50%;
+    filter: blur(50px);
+  }
+
+  @include mq("not-mobile") {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 40px;
+
+    padding: 10px 100px 10px 20px;
+    height: 120px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -16px;
+      right: -133px;
+      width: 359px;
+      height: 400px;
+      background: rgba(87, 0, 224, 0.3);
+      border-radius: 50%;
+      filter: blur(50px);
+    }
+  }
+}
+
+.banner__title {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+
+  margin-bottom: 10px;
+
+  @include mq("not-mobile") {
+    white-space: nowrap;
+    font-size: 24px;
+    line-height: 1.25;
+
+    margin-bottom: 25px;
+  }
+}
+
+.banner__dot {
+  display: none;
+  @include mq("not-mobile") {
+    display: block;
+
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+
+    background-color: var(--bg-accent);
+  }
+}
+
+.banner__name {
+  display: block;
+
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.25;
+
+  @include mq("not-mobile") {
+    white-space: nowrap;
+    font-size: 15px;
+    font-weight: 600;
+
+    line-height: 1;
+  }
+}
+
+.banner__greet {
+  margin-bottom: 5px;
+  @include mq("not-mobile") {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    margin-bottom: 10px;
+  }
+}
+
+.banner__slogan {
+  font-family: var(--font-family-title);
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+  white-space: nowrap;
+  max-height: 30px;
+
+  color: var(--text-accent);
+
+  margin-bottom: 0px;
+
+  @include mq("not-mobile") {
+    font-size: 40px;
+
+    margin-bottom: 10px;
+    max-height: 40px;
+  }
+}
+
+.banner__text-desktop {
+  display: none;
+
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.4;
+
+  &--down {
+    font-weight: 700;
+  }
+
+  &--link {
+    color: var(--text-accent);
+
+    margin-inline: 5px;
+  }
+  @include mq("not-mobile") {
+    display: inline-block;
+  }
+}
+
+.banner__text-mobile {
+  display: inline-block;
+
+  width: 164px;
+  height: 24px;
+  padding: 8px 8px;
+  border: var(--border-accent);
+  margin-bottom: 15px;
+
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 1.4;
+  text-align: center;
+
+  &--span {
+    display: inline;
+    width: auto;
+  }
+
+  &--link {
+    display: inline;
+    color: var(--text-accent);
+
+    width: auto;
+    margin-inline: 3px;
+  }
+  @include mq("not-mobile") {
+    display: none;
+  }
+}
+
+.banner__image {
+  position: absolute;
+  z-index: 4;
+  right: 0;
+  bottom: 25px;
+
+  &--desktop {
+    display: none;
+    @include mq("not-mobile") {
+      display: block;
+      bottom: 0;
+    }
+  }
+  &--mobile {
+    display: block;
+    @include mq("not-mobile") {
+      display: none;
+    }
+  }
+}
+
+.banner__button {
+  position: relative;
+  z-index: 5;
+
+  display: block;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 50px;
+
+  font-size: 14;
+  font-weight: 700;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  background-color: var(--bg-accent);
+
+  @include mq("not-mobile") {
+    width: 300px;
+    margin-top: 12px;
+
+    font-size: 15;
+  }
+}
+
+.banner__first-part {
+  height: calc(100% - 105px);
+
+  @include mq("not-mobile") {
+    height: auto;
+    max-height: 120px;
+    max-width: 276px;
+  }
+}
+
+.banner__second-part {
+  height: 105px;
+  @include mq("not-mobile") {
+    height: auto;
+    max-height: 120px;
+  }
+}
+
+.banner__text {
+  display: inline-block;
+  max-height: 36px;
+  max-width: 80%;
+
+  font-size: 12;
+  font-weight: 600;
+  line-height: 1.5;
+
+  @include mq("not-mobile") {
+    max-height: 42px;
+    max-width: none;
+
+    font-size: 15;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+}
