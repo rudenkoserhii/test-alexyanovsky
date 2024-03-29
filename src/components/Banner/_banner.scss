@@ -1,6 +1,13 @@
 .banner__section {
-  width: 100%;
+  width: calc(100% - 20px);
   height: fit-content;
+
+  margin-bottom: 40px;
+  padding-inline: 10px;
+
+  @include mq("not-mobile") {
+    margin-bottom: 60px;
+  }
 }
 
 .banner__wrapper {
