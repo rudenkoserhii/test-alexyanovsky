@@ -9,8 +9,8 @@ import { useEffect, useState } from "react";
 
 export const Main = (): JSX.Element => {
   const [showVideo, setShowVideo] = useState<boolean>(false);
-  const [showImage, setShowImage] = useState<boolean>(false);
-  const [showBanner, setShowBanner] = useState<boolean>(false);
+  const [showImage, setShowImage] = useState<boolean>(true);
+  const [showBanner, setShowBanner] = useState<boolean>(true);
 
   useEffect(() => {
     const currentDate = new Date();
@@ -23,14 +23,14 @@ export const Main = (): JSX.Element => {
 
     const currentTime = currentHour * 60 + currentMinute;
 
-    if (currentTime >= eighteen && currentTime <= eighteenAndTwenty) {
-      setShowVideo(true);
-    } else if (currentTime >= eighteenAndTwenty && currentTime <= twentyOne) {
-      setShowVideo(true);
-      setShowBanner(true);
-    } else {
-      setShowImage(true);
-    }
+    // if (currentTime >= eighteen && currentTime <= eighteenAndTwenty) {
+    //   setShowVideo(true);
+    // } else if (currentTime >= eighteenAndTwenty && currentTime <= twentyOne) {
+    //   setShowVideo(true);
+    //   setShowBanner(true);
+    // } else {
+    //   setShowImage(true);
+    // }
 
     const intervalId = setInterval(() => {
       const currentDate = new Date();
