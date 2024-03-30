@@ -7,7 +7,7 @@ import { ReactComponent as HandDownIcon } from "assets/icons/hand-down.svg";
 import { ReactComponent as DotsIcon } from "assets/icons/dots.svg";
 
 import anonimous from "assets/images/avatar_anonimous.png";
-import { daysLeft } from "utils/days-left";
+import { daysLeft } from "utils";
 
 type CommentType = {
   id: string;

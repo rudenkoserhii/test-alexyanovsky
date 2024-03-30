@@ -1,1 +1,1 @@
-import { daysLeft } from "utils/days-left";
+export { daysLeft } from "utils/days-left";
