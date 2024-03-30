@@ -113,7 +113,13 @@ export const Comments = (): JSX.Element => {
         <ul className="comments__social-list list">
           {socials.map(({ name, link, Icon }) => (
             <li className="comments__social-item" key={link}>
-              <a href={link} className="comments__social link" title={name}>
+              <a
+                href={link}
+                className="comments__social link"
+                title={name}
+                target="_blank"
+                rel="noreferrer"
+              >
                 <Icon className="comments__icon" />
               </a>
             </li>
@@ -164,41 +170,41 @@ export const Comments = (): JSX.Element => {
                   {daysLeft(Date.now(), new Date(createdAt).valueOf())}
                 </p>
                 <p className="comments__content">{content}</p>
-              </div>
-              <div className="comments__button-box">
-                <button
-                  type="button"
-                  className="comments__answer"
-                  onClick={() => alert("Answer clicked!")}
-                >
-                  <EnterIcon className="comments__answer-icon" />
-                  Ответить
-                </button>
-                <button
-                  type="button"
-                  className="comments__hand-up"
-                  onClick={() => handleClickUp(id)}
-                  disabled={isVouted}
-                >
-                  <HandUpIcon className="comments__hand-up-icon" />
-                  {likes}
-                </button>
-                <button
-                  type="button"
-                  className="comments__hand-down"
-                  onClick={() => handleClickDown(id)}
-                  disabled={isVouted}
-                >
-                  <HandDownIcon className="comments__hand-down-icon" />
-                  {dislikes}
-                </button>
-                <button
-                  type="button"
-                  className="comments__hand-down"
-                  onClick={() => alert("Submenu clicked!")}
-                >
-                  <DotsIcon className="comments__hand-down-icon" />
-                </button>
+                <div className="comments__box-button">
+                  <button
+                    type="button"
+                    className="comments__answer"
+                    onClick={() => alert("Answer clicked!")}
+                  >
+                    <EnterIcon className="comments__answer-icon" />
+                    Ответить
+                  </button>
+                  <button
+                    type="button"
+                    className="comments__hand-up"
+                    onClick={() => handleClickUp(id)}
+                    disabled={isVouted}
+                  >
+                    <HandUpIcon className="comments__hand-up-icon" />
+                    {likes}
+                  </button>
+                  <button
+                    type="button"
+                    className="comments__hand-down"
+                    onClick={() => handleClickDown(id)}
+                    disabled={isVouted}
+                  >
+                    <HandDownIcon className="comments__hand-down-icon" />
+                    {dislikes}
+                  </button>
+                  <button
+                    type="button"
+                    className="comments__dots"
+                    onClick={() => alert("Submenu clicked!")}
+                  >
+                    <DotsIcon className="comments__dots-icon" />
+                  </button>
+                </div>
               </div>
             </div>
           </div>
