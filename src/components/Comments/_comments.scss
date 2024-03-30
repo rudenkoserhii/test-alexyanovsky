@@ -92,6 +92,14 @@
     width: 36px;
     height: 36px;
   }
+
+  transition: var(--anim);
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+    transition: var(--anim);
+  }
 }
 
 .comments__input-box {
@@ -118,6 +126,14 @@
       width: 36px;
       height: 36px;
     }
+  }
+
+  transition: var(--anim);
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+    transition: var(--anim);
   }
 }
 
@@ -167,6 +183,14 @@
   background-color: var(--bg-accent);
 
   cursor: pointer;
+
+  transition: var(--anim);
+
+  &:hover,
+  &:focus {
+    transform: scale(1.02);
+    transition: var(--anim);
+  }
 }
 
 .comments__box {
@@ -273,6 +297,14 @@
   color: var(--text-half-transparent);
 
   cursor: pointer;
+
+  transition: var(--anim);
+
+  &:hover,
+  &:focus {
+    transform: scale(1.02);
+    transition: var(--anim);
+  }
 }
 
 .comments__answer-icon {
@@ -300,6 +332,14 @@
   &:disabled {
     opacity: 0.5;
     pointer-events: none;
+  }
+
+  transition: var(--anim);
+
+  &:hover,
+  &:focus {
+    transform: scale(1.02);
+    transition: var(--anim);
   }
 }
 
@@ -329,6 +369,14 @@
   height: 24px;
 
   cursor: pointer;
+
+  transition: var(--anim);
+
+  &:hover,
+  &:focus {
+    transform: scale(1.02);
+    transition: var(--anim);
+  }
 }
 
 .comments__dots-icon {
