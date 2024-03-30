@@ -14,12 +14,13 @@
 
   @include mq(not-mobile) {
     gap: 40px;
-    min-width: none;
+    min-width: unset;
 
     width: 782px;
-    max-width: none;
+    max-width: unset;
 
     padding: 0;
+    margin-inline: auto;
   }
 }
 

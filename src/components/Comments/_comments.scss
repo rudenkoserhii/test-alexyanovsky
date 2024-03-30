@@ -7,9 +7,9 @@
   padding: 40px 10px;
   background-color: var(--bg-secondary);
   @include mq("not-mobile") {
-    min-width: none;
+    min-width: unset;
     width: 520px;
-    max-width: none;
+    max-width: unset;
     padding: 30px 20px;
     height: 754px;
   }
