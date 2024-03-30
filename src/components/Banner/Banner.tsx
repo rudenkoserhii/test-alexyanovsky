@@ -28,7 +28,7 @@ export const Banner = (): JSX.Element => {
               </span>
               <a
                 href="./"
-                className="link banner__text-desktop banner__text-desktop--link link"
+                className="link banner__text-desktop banner__text-desktop--link"
               >
                 специальное предложение!
               </a>

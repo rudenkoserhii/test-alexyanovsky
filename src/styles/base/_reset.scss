@@ -27,13 +27,4 @@ img {
   display: block;
   text-decoration: none;
   color: inherit;
-
-  transition: color var(--anim);
-
-  &:hover,
-  &:focus {
-    color: var(--text-placeholder);
-
-    transition: color var(--anim);
-  }
 }

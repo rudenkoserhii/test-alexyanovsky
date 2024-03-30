@@ -145,19 +145,19 @@ export const Comments = (): JSX.Element => {
           Отправить
         </button>
       </form>
-      {comments.map(
-        ({
-          id,
-          name,
-          avatar,
-          createdAt,
-          content,
-          likes,
-          dislikes,
-          isVouted,
-        }) => (
-          <div key={id}>
-            <div className="comments__box">
+      <ul className="list comments__list">
+        {comments.map(
+          ({
+            id,
+            name,
+            avatar,
+            createdAt,
+            content,
+            likes,
+            dislikes,
+            isVouted,
+          }) => (
+            <li key={id} className="comments__box">
               <img
                 className="comments__avatar"
                 src={avatar ? avatar : anonimous}
@@ -206,10 +206,10 @@ export const Comments = (): JSX.Element => {
                   </button>
                 </div>
               </div>
-            </div>
-          </div>
-        )
-      )}
+            </li>
+          )
+        )}
+      </ul>
     </section>
   );
 };

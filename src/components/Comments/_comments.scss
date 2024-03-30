@@ -1,12 +1,17 @@
 .comments__wrapper {
   box-sizing: border-box;
 
+  min-width: 300px;
   width: 100%;
+  max-width: 480px;
   padding: 40px 10px;
   background-color: var(--bg-secondary);
   @include mq("not-mobile") {
+    min-width: none;
     width: 520px;
+    max-width: none;
     padding: 30px 20px;
+    height: 754px;
   }
 }
 
@@ -169,8 +174,21 @@
   align-items: flex-start;
   gap: 10px;
 
-  &:not(last-child) {
+  &:not(:last-child) {
     margin-bottom: 25px;
+  }
+}
+
+.comments__list {
+  @include mq("not-mobile") {
+    max-height: 265px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 }
 
