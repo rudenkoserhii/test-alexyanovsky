@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/test-alexyanovsky/static/css/main.c925266d.css",
+    "main.js": "/test-alexyanovsky/static/js/main.37c91b90.js",
+    "static/media/video_preview_desktop_x2.png": "/test-alexyanovsky/static/media/video_preview_desktop_x2.05b4944a4940e0d80bcf.png",
+    "static/media/video_preview_desktop_x1.png": "/test-alexyanovsky/static/media/video_preview_desktop_x1.bdc8eba8e24edee8d729.png",
+    "static/media/video_preview_mobile_x2.png": "/test-alexyanovsky/static/media/video_preview_mobile_x2.ccc97334979faf8e1089.png",
+    "static/media/alex_mobile_x2.png": "/test-alexyanovsky/static/media/alex_mobile_x2.4640e79fb7475ada56f9.png",
+    "static/media/alex_desktop_x2.png": "/test-alexyanovsky/static/media/alex_desktop_x2.3468bfaf007fc2b75dd0.png",
+    "static/media/video_preview_mobile_x1.png": "/test-alexyanovsky/static/media/video_preview_mobile_x1.9848c12d7981b99c1b19.png",
+    "static/media/alex_mobile_x1.png": "/test-alexyanovsky/static/media/alex_mobile_x1.815fe7c1d18b5b364453.png",
+    "static/media/star.svg": "/test-alexyanovsky/static/media/star.4702ca1c14679be64b06ff2ec9493e75.svg",
+    "static/media/google.svg": "/test-alexyanovsky/static/media/google.20fdb5be486b0b795e53208b4e96b62e.svg",
+    "index.html": "/test-alexyanovsky/index.html",
+    "static/media/telegram.svg": "/test-alexyanovsky/static/media/telegram.d6fc0cd54ca9710f3513289eb61c99ac.svg",
+    "static/media/facebook.svg": "/test-alexyanovsky/static/media/facebook.ec0dbd8074d0c3217f7c1a377c1799ee.svg",
+    "static/media/hand-up.svg": "/test-alexyanovsky/static/media/hand-up.06f9048241e60c52e4fd3d812747a96e.svg",
+    "static/media/mail.svg": "/test-alexyanovsky/static/media/mail.b12ba13a07fbd57041106fc382c512cc.svg",
+    "static/media/hand-down.svg": "/test-alexyanovsky/static/media/hand-down.5ec5c97d9e6d3bdcb5f09d15b6759a45.svg",
+    "static/media/share.svg": "/test-alexyanovsky/static/media/share.49c05aa78503b387e288e00c0d325ed3.svg",
+    "static/media/twitter.svg": "/test-alexyanovsky/static/media/twitter.33eeed472432b4e2c6d29a513035724f.svg",
+    "static/media/enter.svg": "/test-alexyanovsky/static/media/enter.fe362f2d26f41b73ec4c37d0717cdad5.svg",
+    "static/media/dots.svg": "/test-alexyanovsky/static/media/dots.7942a6ca7535ac32c65650204e407632.svg",
+    "main.c925266d.css.map": "/test-alexyanovsky/static/css/main.c925266d.css.map",
+    "main.37c91b90.js.map": "/test-alexyanovsky/static/js/main.37c91b90.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c925266d.css",
+    "static/js/main.37c91b90.js"
+  ]
+}
